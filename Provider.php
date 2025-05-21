@@ -13,6 +13,8 @@ class Provider extends AbstractProvider
 
     protected $scopes = ['openid goauthentik.io/api profile email'];
 
+    protected $scopeSeparator = ' ';
+
     public static function additionalConfigKeys(): array
     {
         return ['base_url'];
